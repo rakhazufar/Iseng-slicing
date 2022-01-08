@@ -1,0 +1,25 @@
+//navbar
+nav {
+  @include flex-center($justify: space-between);
+  padding: 0 10vw;
+  height: 20vh;
+  width: 100%;
+  .logo {
+    @include flex-center;
+    img {
+      margin: 0 0.5vw;
+    }
+  }
+  .menus {
+    width: 30vw;
+    @include flex-center($justify: space-between);
+    a {
+      text-decoration: none;
+      color: $sub-text;
+    }
+    .active {
+      font-weight: bold;
+      color: $text;
+    }
+  }
+}

@@ -1,0 +1,68 @@
+footer {
+  .container-footer {
+    @include flex-center($justify: space-around);
+    width: 100%;
+    padding: 0 10vw;
+    height: 50vh;
+    color: white;
+    position: relative;
+    background: rgb(103, 195, 243);
+    background: linear-gradient(
+      90deg,
+      rgba(103, 195, 243, 1) 0%,
+      rgba(90, 152, 242, 1) 100%
+    );
+    & > img {
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      left: 0%;
+      bottom: 1%;
+    }
+
+    & > * {
+      height: 25vh;
+      @include flex-center($align: flex-start, $justify: space-around);
+      flex-direction: column;
+    }
+
+    .about-footer {
+      width: 30vw;
+      & > div {
+        @include flex-center($justify: flex-start);
+        h5 {
+          font-size: 1.4rem;
+          margin-left: 10px;
+          font-weight: 500;
+        }
+      }
+      p {
+        font-weight: lighter;
+        font-size: 0.9rem;
+      }
+    }
+
+    .company-footer,
+    .region-footer,
+    .help-footer {
+      h5 {
+        font-weight: 500;
+        font-size: 1.2rem;
+      }
+      ul {
+        @include flex-center($justify: space-between, $align: flex-start);
+        height: 70%;
+        flex-direction: column;
+        font-weight: lighter;
+        font-size: 0.9rem;
+        a {
+          text-decoration: none;
+          color: white;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}

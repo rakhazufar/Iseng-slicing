@@ -1,0 +1,9 @@
+$blue: #458ff6;
+$sub-text: #7d7987;
+$text: #233348;
+
+@mixin flex-center($justify: center, $align: center) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+}

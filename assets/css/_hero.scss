@@ -1,0 +1,40 @@
+.hero {
+  @include flex-center($justify: space-between);
+  padding: 0 10vw;
+
+  * {
+    margin: 1vw 0;
+  }
+  .hero-text {
+    width: 30vw;
+    h1 {
+      font-weight: bold;
+      font-size: 3rem;
+      color: $text;
+    }
+    p {
+      font-size: 1.3rem;
+      color: $sub-text;
+      font-weight: lighter;
+    }
+    button {
+      font-weight: 500;
+      color: white;
+      font-size: 1rem;
+      padding: 2vh 3vw;
+      border-radius: 30px;
+      border: none;
+      background-color: $blue;
+    }
+  }
+  .hero-img {
+    img {
+      width: 40vw;
+    }
+  }
+  .element {
+    position: absolute;
+    top: 20vh;
+    left: 0;
+  }
+}

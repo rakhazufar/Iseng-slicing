@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500&display=swap");
+@import "./color";
+@import "./navbar";
+@import "./hero";
+@import "./services";
+@import "./about";
+@import "./mobile-app";
+@import "./testi";
+@import "./article";
+@import "./footer";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Mulish";
+  overflow-x: hidden;
+}
+
+.button {
+  button {
+    @include flex-center;
+    padding: 2vh 3vw;
+    border: 1px $blue solid;
+    border-radius: 50px;
+    background: transparent;
+    font-weight: bold;
+    font-size: 1rem;
+    color: $blue;
+    cursor: pointer;
+    letter-spacing: 1px;
+    margin-top: 5vh;
+
+    .icon {
+      width: 0.8vw;
+      margin: 0 0 0 10px;
+    }
+
+    &:hover {
+      background: $blue;
+      color: #ffffff;
+      .icon {
+        filter: brightness(0) saturate(100%) invert(100%) sepia(0%)
+          saturate(7495%) hue-rotate(240deg) brightness(104%) contrast(100%);
+      }
+    }
+  }
+}
+
+.element {
+  position: absolute;
+  right: 0%;
+  margin-bottom: 100px;
+}
